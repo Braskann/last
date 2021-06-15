@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main_header">
+        <div class="headline">
+            <div class="logo"><img src="img/b&w_logo.png" alt=""></div>
+            <div class="nav">
+                <ul class="main_nav">
+                    <li><a href="#">Детям</a></li>
+                    <li><a href="#">Взрослым</a></li>
+                    <li><a href="#">Тренеры</a></li>
+                    <li><a href="#">Цены</a></li>
+                </ul>
+            </div>
+            <div class="head_telephone">
+                <p>8 (831) 424-20-00</p>
+                <a href="#">заказать звонок</a>
+            </div>
+        </div>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/header-back.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/header-back.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/header-back.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/header-back.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination">
+                <span></span>
+            </div>
+        </div>
+        
+        <aside>
+            <input class="aside-input" type="checkbox" name="accord" id="aside">
+            <label class='aside-label' for="aside">
+                <span></span>
+                <span class="label-line"></span>
+                <span></span>
+            </label>
+            <div class="aside-main">
+                <div class="aside-icons">
+                    <img src="img/aside-icon3.svg" alt="">
+                    <img src="img/aside-icon1.svg" alt="">
+                    <img src="img/aside-icon2.svg" alt="">
+                </div>
+                <div class="aside-links">
+                    <a href="#">Vk</a>
+                    <a href="#">Ins</a>
+                    <a href="#">Fb</a>
+                </div>
+                <p>
+                    пн-вс <br>
+                    с 8:00 <br>
+                    до 23:00</p>
+            </div>
+            <div class="recording">
+                <p>Online</p>
+                <p>запись</p>
+            </div>
+            <div class="aside-tel">
+                <div class="head_telephone">
+                    <p>8 (831) 424-20-00</p>
+                </div>
+            </div>
+            <div class="aside-block"></div>
+        </aside>
+    </header>
+    <!-- <input class="accord-input" type="checkbox" name="accord" id="accord-item-1">
+    <div class="accord-item">
+        <label class='accord-label' for="accord-item-1"><h3>photography</h3></label>
+    </div> -->
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+</body>
+</html>
