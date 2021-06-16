@@ -1,0 +1,416 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'GothamPro', sans-serif;
+}
+@font-face {
+    font-family: 'GothamPro';
+    src: url(../fonts/GothamPro.ttf);
+}
+@font-face {
+    font-family: 'GothamPro-Light';
+    src: url(../fonts/GothamPro-Light.ttf);
+}
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url(../fonts/GothamPro-Medium.ttf);
+}
+@font-face {
+    font-family: 'GothamPro-Bold';
+    src: url(../fonts/GothamPro-Bold.ttf);
+}
+h1 {
+    font-family: 'GothamPro-Medium';
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    line-height: 48px;
+}
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1400px;
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    top: 10px;
+}
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_nav li{
+    list-style: none;
+    margin-left: 80px;
+}
+.main_nav li a {
+    text-decoration: none;
+    font-family: 'GothamPro-Bold';
+    color: white;
+    font-size: 20px;
+}
+.head_telephone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.head_telephone p {
+    font-family: 'GothamPro-Bold';
+    font-size: 18px;
+    color: #444;
+}
+.main-header-headline {
+    width: 100%;
+    position: relative;
+    height: 1px;
+    background-color: #F7D22C;
+}
+ a {
+    font-size: 15px;
+    color: white;
+    text-decoration: underline;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+.swiper-container::after {
+    content: '';
+    display: block;
+    height: 45px;
+    width: 133px;
+    background-image: url(../img/click.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 48%;
+    bottom: 40px;
+    position: absolute;
+    z-index: 1;
+}
+/* SLIDER */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../img/header-back.png);
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+  background-size: cover;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+}
+.swiper-pagination > span {
+    height: 10px;
+    width: 65px;
+    border-radius: 0%;
+}
+.swiper-pagination-bullets > .swiper-pagination-bullet-active {
+    background: white;
+}
+.swiper-pagination-bullets > .swiper-pagination-bullet-active {
+    background: white;
+    width: 90px;
+}
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #e9bb00;
+    opacity: 1;
+}
+.boxShadow1 {
+    width: 80%;
+    max-width: 550px;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+  }
+/* SLIDER END */
+aside {
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    background: url(../img/aside.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.aside-label {
+    display: block;
+    height: 10%;
+    width: 100px;
+    background: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.label-line {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.aside-label > span {
+    display: block;
+    width: 28px;
+    height: 5px;
+    background: white;
+}
+.aside-input {
+    display: none;
+}
+.aside-main {
+    height: 78.5%;
+}
+.recording {
+    display: block;
+    height: 10%;
+    width: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+.aside-input:checked ~ .recording {
+    display: none;
+}
+.aside-tel {
+    opacity: 0;
+}
+.aside-input:checked ~ .aside-label > .label-line {
+    opacity: 0;
+    transition: 1s;
+}
+.aside-input:checked ~ .aside-label > .label-line1 {
+    transform: rotate(45deg) translateY(3px) translateX(13px);
+    transition: 1s;
+}
+.aside-input:checked ~ .aside-label > .label-line3 {
+    transform: rotate(-45deg) translateY(-5px) translateX(15px);
+    transition: 1s;
+}
+.aside-input:checked ~ .aside-tel{ 
+    height: 10%;
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    opacity: 1;
+    background-color: black;
+}
+
+.aside-input:checked ~ .aside-block {
+    display: block;
+    height: 90%;
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    background: url(../img/aside2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aside-block {
+    display: none;
+}
+.aside-icons img {
+    height: 40px;
+    margin-bottom: 50px;
+}
+.aside-icons img:first-child {
+    margin-top: 62px;
+}
+.aside-icons img:last-child {
+    margin-bottom: 180px;
+}
+.aside-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aside-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.aside-links > a {
+    color: black;
+    font-family: 'GothamPro-Medium';
+    font-size: 12px;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+.aside-links > a:last-child {
+    margin-bottom: 70px;
+}
+.aside-main p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.aside-tel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aside-tel > .head_telephone > p {
+    color: white;
+    margin-left: 50px;
+}
+.aside-block {
+    padding-left: 40px;
+    padding-top: 8vh;
+}
+.aside-block-nav1, .aside-block-nav2 {
+    margin-bottom: 9vh;
+}
+.aside-block-nav1 li, .aside-block-nav2 li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+.aside-block-nav1 li a, .aside-block-nav2 li a {
+    font-family: 'GothamPro-Medium';
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.aside-block-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aside-block-links > a {
+    color: black;
+    font-family: 'GothamPro-Medium';
+    font-size: 12px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    margin-right: 45px;
+}
+/* СЛЕД БЛОК */
+.main_header {
+    height: 963px;
+}
+.about-squash {
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 66px;
+    padding-right: 144px;
+    padding-bottom: 120px;
+}
+.what-is-squash {
+    padding-left: 70px;
+    padding-top: 100px;
+    height: 500px;
+    background-image: url(../img/sk1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.batton {
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    position: relative;
+}
+.batton > a {
+    text-decoration: none;
+    font-family: 'GothamPro-Medium';
+    font-size: 16px;
+    color: white;    
+}
+.batton > .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #FFB225;
+    position: absolute;
+    right: -5px;
+}
+.gorky-squash-batton {
+    background-color: #FFB225;
+}
+.gorky-squash {
+    margin-top: 70px;
+    height: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-image: url(../img/sk2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gorky-squash > p {
+    font-size: 24px;
+    font-family: 'GothamPro-Light';
+}
+.gorky-squash > p > span {
+    font-family: 'GothamPro-Medium';
+}
