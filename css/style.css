@@ -1,4 +1,84 @@
-body {
-  background-color: #000;
+.news-of-school {
+  background-image: url(../img/news.png);
+  background-position: top;
+  background-size: contain;
+}
+
+.news-of-school .news-of-school__swiper {
+  position: relative;
+  height: 80vh;
+}
+
+.nadoelo {
+  padding-left: 67px;
+  padding-right: 153px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.nadoelo .nadoelo__deti {
+  background-image: url(../img/chi-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: 0 0 10px 5px #eeecec;
+          box-shadow: 0 0 10px 5px #eeecec;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nadoelo .nadoelo__deti .nadoelo__detenok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.nadoelo .nadoelo__deti .nadoelo__detenok1 .nadoelo__deti__text {
+  position: absolute;
+  top: 0;
+  left: -85px;
+}
+
+.nadoelo .nadoelo__deti .nadoelo__detenok2 .nadoelo__deti__text {
+  position: absolute;
+  top: -45px;
+  left: 70px;
+}
+
+.nadoelo .nadoelo__deti .nadoelo__detenok3 .nadoelo__deti__text {
+  position: absolute;
+  top: -70px;
+  right: 40px;
+}
+
+.nadoelo .nadoelo-button {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.nadoelo h1 {
+  font-family: 'GothamPro';
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.nadoelo h1 span {
+  font-family: 'GothamPro-Bold';
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,67 @@
-body {
-    background-color: #000;
+
+.news-of-school {
+    background-image: url(../img/news.png);
+    background-position: top;
+    background-size: contain;
+    .news-of-school__swiper {
+        position: relative;
+        height: 80vh;
+    }
+}
+.nadoelo {
+    padding-left: 67px;
+    padding-right: 153px;
+    padding-bottom: 200px;
+    position: relative;
+    .nadoelo__deti {
+        background-image: url(../img/chi-back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 10px 5px rgb(238, 236, 236);
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .nadoelo__detenok {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+        .nadoelo__detenok1 {
+            .nadoelo__deti__text {
+                position: absolute;
+                top: 0;
+                left: -85px;
+            }
+        }
+        .nadoelo__detenok2 {
+            .nadoelo__deti__text {
+                position: absolute;
+                top: -45px;
+                left: 70px;
+            }
+        }
+        .nadoelo__detenok3 {
+            .nadoelo__deti__text {
+                position: absolute;
+                top: -70px;
+                right: 40px;
+            }
+        }
+    }
+    .nadoelo-button {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    h1 {
+        font-family: 'GothamPro';
+        text-align: center;
+        margin-bottom: 70px;
+        span {
+            font-family: 'GothamPro-Bold';
+        }
+    }
 }
